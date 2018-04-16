@@ -67,7 +67,7 @@ form {
   font-size: 55px;
   line-height: 70px;
   color: white;
-  text-shadow: 4px 4px 4px black;
+  text-shadow: 4px 2px 5px #000;
   font-weight: bolder;
 }
 
@@ -116,7 +116,7 @@ form {
 }
 
 #expertise {
-  padding: 5%;
+  padding: 3%;
 }
 
 .expertise-content {
@@ -125,15 +125,45 @@ form {
 
 #expertise h2 {
   font-size: 42px;
-  text-shadow: 2px 1px 6px #888;
   padding-bottom: 1%;
   border-bottom: 3px solid;
   display: inline;
 }
 
-.expertise-svg {
-  height: 15vh;
+.expertise-svg,
+.express-svg,
+.firebase-svg,
+.react-svg,
+.node-svg {
   margin: 3% auto;
+  padding-top: 4%;
+  height: 16vh;
+}
+
+.react-svg {
+  padding-top: 7%;
+  padding-bottom: 4%;
+}
+
+.express-svg {
+  padding-top: 10%;
+}
+
+.node-svg {
+  padding-top: 0;
+}
+
+.firebase-svg {
+  padding: 10%;
+  height: 17vh;
+}
+
+.expertise-container {
+  background: #f5f5f5;
+  margin: 2%;
+  width: 21%;
+  border-radius: 4px;
+  box-shadow: 3px 2px 12px 2px #bcbcbc;
 }
 
 #portfolio {
@@ -146,7 +176,7 @@ form {
 
 #portfolio h3 {
   font-weight: bold;
-  color: #067bc2;
+  color: #f12c2c;
   font-size: 26px;
   margin-top: 0;
 }
@@ -161,7 +191,7 @@ form {
 
 .portfolio-paragraph {
   padding: 0 4%;
-  opacity: 0.06;
+  opacity: 0.08;
 }
 
 .portfolio-paragraph p {
@@ -173,7 +203,6 @@ form {
 .portfolio-heading h2 {
   font-size: 42px;
   padding-bottom: 1%;
-  text-shadow: 2px 1px 6px #888;
   border-bottom: 3px solid;
   display: inline;
   margin: 0 auto;
@@ -183,12 +212,15 @@ form {
 .project-img-text {
   position: relative;
   color: white;
-  background: rgba(6, 123, 194, 1);
+  background-image: linear-gradient(to bottom right, #700f0f, #e23131);
+  box-shadow: 3px 3px 3px black, inset 4px 6px 8px rgba(0, 0, 0, 0.5),
+    inset -2px -3px 5px rgba(255, 255, 255, 0.3);
   height: 20vh;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 8px;
   text-decoration: none;
   margin: 20% auto;
+  border: 1px solid rgb(187, 187, 187);
 }
 
 .project-first-row h2 {
@@ -208,9 +240,16 @@ form {
   font-size: 42px;
 }
 
+.project-first-row:focus,
 .project-first-row:hover,
-.project-img-text:hover {
-  background: rgba(6, 123, 194, 0.2);
+.project-first-row:active,
+.project-img-text:active,
+.project-img-text:hover,
+.project-img-text:focus {
+  box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3),
+    inset -2px -3px 5px rgba(255, 255, 255, 0);
+  background-image: linear-gradient(to bottom right, #bc1212, #d82929);
+  opacity: 0.7;
 }
 
 #portfolio a:hover {
@@ -348,6 +387,7 @@ form {
 .fa-stack-overflow,
 .fa-medium {
   font-size: 55px;
+  color: white;
   margin-left: 1.5%;
   padding-top: 1.5%;
 }
@@ -356,7 +396,7 @@ form {
 .fa-linkedin:hover,
 .fa-stack-overflow:hover,
 .fa-medium:hover {
-  color: #067bc2;
+  color: #999;
 }
 
 .footer-container {
@@ -365,7 +405,8 @@ form {
 
 #footer {
   position: absolute;
-  background: #e5e5e5;
+  background: black;
+  color: white;
   height: 70px;
   width: 100%;
   margin-bottom: -1%;
@@ -424,10 +465,6 @@ form {
 
   #portfolio {
     padding-top: 3%;
-  }
-
-  #portfolio h3 {
-    font-size: 22px;
   }
 
   .portfolio-heading h2 {
