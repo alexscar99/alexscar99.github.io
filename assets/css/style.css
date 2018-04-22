@@ -67,7 +67,9 @@ form {
   text-align: center;
 }
 
-.expertise-dev {
+.expertise-dev,
+.expertise-design,
+.expertise-mobile {
   font-size: 2.25rem;
   border-radius: 50% !important;
   height: 10rem;
@@ -78,7 +80,9 @@ form {
   margin: 50px auto;
 }
 
-.dev-icon {
+.dev-icon,
+.design-icon,
+.mobile-icon {
   font-size: 1.6em;
   display: block;
   padding-top: 14px;
@@ -86,7 +90,9 @@ form {
   width: 100%;
 }
 
-.dev-text {
+.dev-text,
+.design-text,
+.mobile-text {
   margin: 40px auto;
   display: block;
   width: 50%;
